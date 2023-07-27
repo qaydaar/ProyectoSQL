@@ -21,7 +21,7 @@ foreign key (id_residuo) references Residuo(id_residuo)
 );
 create table Almacenamiento (
 id_almacenamiento INT AUTO_INCREMENT primary key,
-nr_bodega varchar(15),
+nr_bodega INT,
 cantidad_a INT,
 id_residuo INT,
 foreign key (id_residuo) references Residuo(id_residuo)
